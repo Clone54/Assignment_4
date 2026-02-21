@@ -12,11 +12,11 @@ ANS: const newElement = document.createElement('div');
 3. What is Event Bubbling? And how does it work?
 ANS: Event Bubbling is a process where an event starts at the target element and then flows upward towards its parent elements  until it reaches the root element of the document.
     how it works -->>
-    <html>
-        <body>
-            <div id="parent">
-                <button id="child">Click Me</button>
-            </div>
+    >html>
+        >body>
+            >div id="parent">
+                >button id="child">Click Me>/button>
+            >/div>
 
             <script>
                 document.getElementById('parent').addEventListener('click', () => {
@@ -29,6 +29,8 @@ ANS: Event Bubbling is a process where an event starts at the target element and
             </script>
         </body>
     </html>
+
+[NB: used > instead of < because it is compiling the html on the git page, the ans is not meaningful then.]
 
 when the button "Click Me" is clicked it consoles "Child Clicked" and then the event goes up to the div and then it is called by the parent id and consoles "Parent Clicked".
 
