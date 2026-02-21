@@ -18,6 +18,7 @@ function updateDashboard(){
     const rejectedCount = jobs.filter(job => job.status === 'rejected').length;
 
     document.getElementById('count-total').textContent = total;
+    document.getElementById('count-job').textContent = total;
     document.getElementById('count-interview').textContent = interviewCount;
     document.getElementById('count-rejected').textContent = rejectedCount;
 
