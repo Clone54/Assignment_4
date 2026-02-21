@@ -33,4 +33,11 @@ ANS: Event Bubbling is a process where an event starts at the target element and
 when the button "Click Me" is clicked it consoles "Child Clicked" and then the event goes up to the div and then it is called by the parent id and consoles "Parent Clicked".
 
 4. What is Event Delegation in JavaScript? Why is it useful?
-ANS: Event Delegation is
+ANS: Event Delegation is a pattern in javascript used to manage events more easily and effitiently by using event bubbling.
+
+why is it useful -->>
+at question 3 we have told about the event bubbles, it is also quite like this. for example, if we have a list instead of using evenlistener to every li we can simply call the eventlistener on parent ul of the li's.
+
+5. What is the difference between preventDefault() and stopPropagation() methods?
+ANS: preventDefault() --> it stops the default action of an event.
+     stopPropagation() --> it stops the propagation (stops the bubble to go furthure up the DOM tree) of an event.
