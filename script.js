@@ -87,12 +87,20 @@ function renderJobs(){
         const card = document.createElement('div');
         card.className = 'bg-white rounded-2xl p-6 shadow-sm border border-slate-100 hover:shadow-md transition-all relative group';
 
-        const statusBadge = job.status === 'pending'
-            ? `<span class="text-[16px] bg-slate-100 text-slate-500 h-50 p-3 rounded">Not Applied</span>`
-            : job.status === 'interview'
-            ? `<span class="text-[16px] bg-green-300 text-white-500 font-bold h-50 p-3 rounded">Interviewing</span>`
-            : `<span class="text-[16px] bg-red-300 text-white-500 font-bold h-50 p-3 rounded">Rejected</span>`;
+        const statusBadge = 
+              job.status === 'pending'? `<span class="text-[16px] bg-slate-100 text-slate-500 h-50 p-3 rounded">Not Applied</span>`:
+              job.status === 'interview'? `<span class="text-[16px] bg-green-300 text-white-500 font-bold h-50 p-3 rounded">Interviewing</span>`: 
+              `<span class="text-[16px] bg-red-300 text-white-500 font-bold h-50 p-3 rounded">Rejected</span>`;
 
+        const logo = job.companyName === 'Google' ? `<i class="fa-brands fa-google"></i>` :
+                     job.companyName === 'Microsoft' ? `<i class="fa-brands fa-microsoft"></i>` :
+                     job.companyName === 'Meta' ? `<i class="fa-brands fa-facebook"></i>` :
+                     job.companyName === 'Apple' ? `<i class="fa-brands fa-apple"></i>` :
+                     job.companyName === 'Amazon' ? `<i class="fa-brands fa-amazon"></i>` :
+                     job.companyName === 'Netflix' ? `<i class="fa-solid fa-n"></i>` :
+                     job.companyName === 'Tesla' ? `<i class="fa-solid fa-car"></i>` :
+                     job.companyName === 'Shopify' ? `<i class="fa-brands fa-shopify"></i>` :
+                     `<div class="w-40 h-40 rounded mb-4 flex items-center justify-center text-slate-500 font-bold">${job.companyName.charAt(0)}</div>`;
         card.innerHTML = `
                     <div class="absolute top-4 right-4">
                         <button onclick="deleteJob(${job.id})"
@@ -101,6 +109,8 @@ function renderJobs(){
                         </button>
                     </div>
                     
+                    ${logo}
+
                     <h3 class="text-lg font-bold text-slate-900 mb-1">${job.position}</h3>
                     <p class="text-indigo-600 font-semibold text-sm mb-3">${job.companyName}</p>
                     
