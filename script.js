@@ -1,12 +1,12 @@
 const initialJobs = [
     {id: 1, companyName: "Google", position: "Frontend Developer", location: "Mountain View, CA", type: "Full-Time", salary: "$140k-$160k", description: "Develop and scale responsive web applications using modern JavaScript frameworks.", status: "pending"},
-    {id: 2, companyName: "Microsoft", position: "Backend Developer", location: "Mountain View, CA", type: "Full-Time", salary: "$140k-$160k", description: "Develop and scale responsive web applications using modern JavaScript frameworks.", status: "pending"},
-    {id: 3, companyName: "Meta", position: "Fullstack Developer", location: "Mountain View, CA", type: "Full-Time", salary: "$140k-$160k", description: "Develop and scale responsive web applications using modern JavaScript frameworks.", status: "pending"},
-    {id: 4, companyName: "Apple", position: "Hardware Engineer", location: "Mountain View, CA", type: "Full-Time", salary: "$140k-$160k", description: "Develop and scale responsive web applications using modern JavaScript frameworks.", status: "pending"},
-    {id: 5, companyName: "Amazon", position: "Software Engineer", location: "Mountain View, CA", type: "Full-Time", salary: "$140k-$160k", description: "Develop and scale responsive web applications using modern JavaScript frameworks.", status: "pending"},
-    {id: 6, companyName: "Netflix", position: "Product Designer", location: "Mountain View, CA", type: "Full-Time", salary: "$140k-$160k", description: "Develop and scale responsive web applications using modern JavaScript frameworks.", status: "pending"},
-    {id: 7, companyName: "Tesla", position: "UX Researcher", location: "Mountain View, CA", type: "Full-Time", salary: "$140k-$160k", description: "Develop and scale responsive web applications using modern JavaScript frameworks.", status: "pending"},
-    {id: 8, companyName: "Spotify", position: "Product Manager", location: "Mountain View, CA", type: "Full-Time", salary: "$140k-$160k", description:"Develop and scale responsive web applications using modern JavaScript frameworks.", status: "pending"},
+    {id: 2, companyName: "Microsoft", position: "Backend Developer", location: "Redmond, WA", type: "Full-Time", salary: "$90k-$120k", description: "Design intuitive interfaces for global payment systems and developer tools.", status: "pending"},
+    {id: 3, companyName: "Meta", position: "Fullstack Developer", location: "New York, NY", type: "Full-Time", salary: "$200k-$210k", description: "Develop and scale responsive web applications using modern JavaScript frameworks.", status: "pending"},
+    {id: 4, companyName: "Apple", position: "Hardware Engineer", location: "San Francisco, CA", type: "Full-Time", salary: "$70k-$90k", description: "Develop and scale responsive web applications using modern JavaScript frameworks.", status: "pending"},
+    {id: 5, companyName: "Amazon", position: "Software Engineer", location: "Remote", type: "Full-Time", salary: "$140k-$170k", description: "Develop and scale responsive web applications using modern JavaScript frameworks.", status: "pending"},
+    {id: 6, companyName: "Netflix", position: "Product Designer", location: "Los Gatos, CA", type: "Full-Time", salary: "$150k-$190k", description: "Develop and scale responsive web applications using modern JavaScript frameworks.", status: "pending"},
+    {id: 7, companyName: "Tesla", position: "UX Researcher", location: "Austin, TX", type: "Full-Time", salary: "$200k+", description: "Develop and scale responsive web applications using modern JavaScript frameworks.", status: "pending"},
+    {id: 8, companyName: "Shopify", position: "Product Manager", location: "Toronto, Canada", type: "Full-Time", salary: "$110k-$140k", description:"Develop and scale responsive web applications using modern JavaScript frameworks.", status: "pending"},
 ];
 
 let jobs = [...initialJobs];
